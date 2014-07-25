@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/18F/answers-ruby-client.svg?branch=master)](https://travis-ci.org/18F/answers-ruby-client)
+
+[![Code Climate](https://codeclimate.com/github/18F/answers-ruby-client.png)](https://codeclimate.com/github/18F/answers-ruby-client)
+
+[![Test Coverage](https://codeclimate.com/github/18F/answers-ruby-client/coverage.png)](https://codeclimate.com/github/18F/answers-ruby-client)
+
 # answers-ruby-client
 
 Low level Ruby access to the [Answers Platform](https://github.com/18F/answers) API
