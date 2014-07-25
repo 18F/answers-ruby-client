@@ -1,0 +1,1192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/147
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjgzZDg3NTk5OGQ5ZjBmODRlMDFmYzBkNTI3NzYxZjRmIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        YWIwZGNiNjItMTAyNS00NmUzLThlMWUtOTM3NzQ4ODFmOTcx
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTgzMzM=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAMyV0lMAA4yOQQrCMBAA/7Ln1nSb6Oq+w5MiEpqFFqJJmy0IpX+3vXj2
+        ODADs8A4S9EhvQvwfYEhAKOjCrpJvEp4egWGtkFXN1S3xysSW2I8Hc4Xd4MK
+        5hz+8lQ+u1H8K0fZuylu2KtmNiamzsc+FWW0lsxvyWwrsD7WLwAAAP//AwA2
+        rAHjpgAAAA==
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:37:16 GMT
+- request:
+    method: delete
+    uri: http://localhost:1337/api/v1/questions/147
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"83d875998d9f0f84e01fc0d527761f4f"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 850fa91d-94d4-4a6b-863a-eec81af6fc26
+      X-Runtime:
+      - '0.023260'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":147,"created_at":"2014-07-25T17:37:16.894Z","updated_at":"2014-07-25T17:37:16.894Z","text":"sample","url":"http://localhost:1337/questions/147"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:37:16 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/147
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        YTcyMDg5OTYtZTE3My00Nzg4LTlmYjQtZTc3OTY1YmU5YmUy
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTM0MTM=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAMyV0lMAA6pWyk0tLk5MT1WyUjIxMFHwyy9RcMsvzUtR0lEqLkksKS1W
+        sgKK1wIAAAD//wMAaBqS8ygAAAA=
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:37:16 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/149
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjBmYTQ2MjNhNmUyODQxZDk5MjQ3MGRiNmNiYjRkYjdjIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        NGVmYTg0MTQtYWE2MC00ODg1LTk2MTUtOGZlOTQ4OGI1MTA0
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTgxNTc=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIACmW0lMAA4yOQQqDMBAA/7JnbVyTErPv6KmllGAWFKJJzQoF8e/VS889
+        DszAbPBeuciY5gL02GAMQGhcBf3CXji8vABB26CpG1u31xta0h0Zd3HY3aGC
+        NYe/POHPaRQ/5chnt8QDB5FMSsXU+zikIoRaW/VbUscK7M/9CwAA//8DABrw
+        Tf+mAAAA
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:38:49 GMT
+- request:
+    method: delete
+    uri: http://localhost:1337/api/v1/questions/149
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"0fa4623a6e2841d992470db6cbb4db7c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59808d53-aa0c-4fc9-bc19-a78993879f57
+      X-Runtime:
+      - '0.023434'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":149,"created_at":"2014-07-25T17:38:49.918Z","updated_at":"2014-07-25T17:38:49.918Z","text":"sample","url":"http://localhost:1337/questions/149"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:38:49 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/149
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        Nzc2NDBmMDQtODA0MS00OWU2LThmYzUtZjE0NTVmNTdjMWE4
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTE5NDk=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIACmW0lMAA6pWyk0tLk5MT1WyUjIxMFHwyy9RcMsvzUtR0lEqLkksKS1W
+        sgKK1wIAAAD//wMAaBqS8ygAAAA=
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:38:49 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjVjOGRiYjY2MGY1ZTMwMTdjMWJkYzRjZjBkNTc5NzkwIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        NGY5NzZiZGYtYzkwMy00OGQ2LWI4YTctMzgxMDgwMjNiMjQ3
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTk2OTg=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAC6W0lMAA4yOQQqDMBAA/7JnNa5JmrLv6KlFSjALCmkTzQoF8e/VS889
+        DszAbDCvXGRK7wL02GAKQGixgmFhLxyeXoCga9HUras7e0NH+krWNNpc7lDB
+        msNfnvDnNIp/5chnt8QDR5FMSsU0+DimIoRaO/VbUscK7P3+BQAA//8DAMx5
+        KFOmAAAA
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:38:54 GMT
+- request:
+    method: delete
+    uri: http://localhost:1337/api/v1/questions/151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"5c8dbb660f5e3017c1bdc4cf0d579790"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c3012d10-1605-4430-959f-5da31c449c52
+      X-Runtime:
+      - '0.025430'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":151,"created_at":"2014-07-25T17:38:54.346Z","updated_at":"2014-07-25T17:38:54.346Z","text":"sample","url":"http://localhost:1337/questions/151"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:38:54 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/151
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ZjEyNTZmZGEtMmQzMy00N2I3LWFjYzEtZDFjYThmYWJmMTIy
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTE3ODQ=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAC6W0lMAA6pWyk0tLk5MT1WyUjIxMFHwyy9RcMsvzUtR0lEqLkksKS1W
+        sgKK1wIAAAD//wMAaBqS8ygAAAA=
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:38:54 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/153
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjE1NmU4NzEzNGI0NGZkNmEzZGRlNjI2NTI0Zjc3ODQ5Ig==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ZWU0ZWI1ZmMtNzYyZC00M2JkLWJiZjMtZmNiMzI0OTNjYzBh
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTg0NDQ=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIADqW0lMAA4yOQQqDMBAA/7JnbbKmadp9R08tIsEsKKRNNCsUxL9XLz33
+        ODADs8K0cJExvQvQc4UxAKE1FfQze+HQeQGCRuO51q5u7B0dmRvpy8ni9QEV
+        LDn85Ql/DqP4V458dHPccRDJpFRMvY9DKkJojFO/JbWvwNZuXwAAAP//AwAe
+        LOAspgAAAA==
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:39:06 GMT
+- request:
+    method: delete
+    uri: http://localhost:1337/api/v1/questions/153
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"156e87134b44fd6a3dde626524f77849"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b8ab8f0d-5b63-4d10-861c-25a9c5bbeb9c
+      X-Runtime:
+      - '0.023920'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":153,"created_at":"2014-07-25T17:39:06.518Z","updated_at":"2014-07-25T17:39:06.518Z","text":"sample","url":"http://localhost:1337/questions/153"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:39:06 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/153
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ZmYzNzI1NTAtZTE1ZC00YmE4LTkzMjktZDc0NDU2YmQ5NjUw
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTEzNjY=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIADqW0lMAA6pWyk0tLk5MT1WyUjIxMFHwyy9RcMsvzUtR0lEqLkksKS1W
+        sgKK1wIAAAD//wMAaBqS8ygAAAA=
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:39:06 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/155
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        ImE1NWYxYzdkY2RmNDhlZmIyYzQ1OGMxNzZiM2Y0ZmI4Ig==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ODVkZjIzN2UtMTAyNi00OTYwLWJhNWItOTNmODMyZDIwMzZk
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTc2OTk=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGSW0lMAA4yOQQqDMBQF7/LW2pjENPWfo6uWUoIJKKRNNF8oiHevbrru
+        cmAGZsW0hMJjehfQfcXoQdKYCv0cHAf/dAyCamRbN7ZW5iot6Y7ay0l15xsq
+        LNn/5XH4HEZxrxzD0c1xx4E5kxAx9S4OqTBJra34LYl9Bdtj+wIAAP//AwAQ
+        sxo9pgAAAA==
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:39:48 GMT
+- request:
+    method: delete
+    uri: http://localhost:1337/api/v1/questions/155
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"a55f1c7dcdf48efb2c458c176b3f4fb8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 194aece5-4b2d-471e-97ef-825463b2ea5e
+      X-Runtime:
+      - '0.024926'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":155,"created_at":"2014-07-25T17:39:48.296Z","updated_at":"2014-07-25T17:39:48.296Z","text":"sample","url":"http://localhost:1337/questions/155"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:39:48 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/155
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        ZThmYWZlNjYtNmMzMC00NGNiLTkxZDEtNWE1MTg4MjkxZjBk
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTE0NTk=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAGSW0lMAA6pWyk0tLk5MT1WyUjIxMFHwyy9RcMsvzUtR0lEqLkksKS1W
+        sgKK1wIAAAD//wMAaBqS8ygAAAA=
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:39:48 GMT
+- request:
+    method: post
+    uri: http://localhost:1337/api/v1/questions
+    body:
+      encoding: UTF-8
+      string: ! '{"text":"sample","in_language":"english"}'
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"0085bbc705f06254fa560d6be528e79d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e035abfa-8434-4bbd-8e86-7e787ce1bab6
+      X-Runtime:
+      - '0.023484'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":157,"created_at":"2014-07-25T17:40:56.117Z","updated_at":"2014-07-25T17:40:56.117Z","text":"sample","url":"http://localhost:1337/questions/157"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:40:56 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/157
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjAwODViYmM3MDVmMDYyNTRmYTU2MGQ2YmU1MjhlNzlkIg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        YzQ5MjM3NTYtMzQ0Ni00MmIwLWIyNGQtMjdkODU2ZmExYjAx
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTc3ODE=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAKiW0lMAA4yOQQqDMBAA/7JnbbJqurDv6KmlSDALCmmTmhUK4t/VS889
+        DszArPBZpOiU3gX4scIUgNFRBcMsXiX0XoGhsdjVlurG3ZC4s+yuF0S6QwVL
+        Dn95Kt/TKP6Vo5zdHA8cVTMbE9Pg45iKMrYtmd+SOVZge247AAAA//8DAIyo
+        2+GmAAAA
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:40:56 GMT
+- request:
+    method: delete
+    uri: http://localhost:1337/api/v1/questions/157
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"0085bbc705f06254fa560d6be528e79d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7bd87781-5e8c-4973-8248-66b1052fb714
+      X-Runtime:
+      - '0.067834'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
+    body:
+      encoding: US-ASCII
+      string: ! '{"questions":[{"id":157,"created_at":"2014-07-25T17:40:56.117Z","updated_at":"2014-07-25T17:40:56.117Z","text":"sample","url":"http://localhost:1337/questions/157"}]}'
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:40:56 GMT
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/questions/157
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-User-Email:
+      - alan.delevie@gsa.gov
+      X-User-Token:
+      - 1EZGWhkmhRz6DYDmEePc
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        Y2Y4YTE0NTctMjEwZi00OWZjLTk0ZDUtYzc3ODAwMWY1N2Fm
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wMTE1NDU=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAKiW0lMAA6pWyk0tLk5MT1WyUjIxMFHwyy9RcMsvzUtR0lEqLkksKS1W
+        sgKK1wIAAAD//wMAaBqS8ygAAAA=
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:40:56 GMT
+recorded_with: VCR 2.9.2

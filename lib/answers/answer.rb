@@ -7,7 +7,6 @@ module Answers
       {name: :updated_at, read_only: true},
       {name: :text, read_only: false},
       {name: :in_language, read_only: false},
-      {name: :need_to_know, read_only: false},
       {name: :question_id, read_only: false}
     ]
   
@@ -20,21 +19,19 @@ module Answers
       ANSWER_ATTRS.each do |attribute|
         instance_variable_set("@#{attribute[:name]}", params[attribute[:name]]) if params[attribute[:name]]
       end
-    end
-  
-    def attribute_names
-      ANSWER_ATTRS.map {|attribute| attribute[:name]}
+      update_attributes!(params)
     end
   
     def attributes
-      hash = {}
-      attribute_names.each do |attr_name|
-        hash.merge!({
-          attr_name.to_sym => instance_variable_get("@#{attr_name}")
-        })
-      end
-    
-      hash
+      ivar_to_sym = Proc.new {|ivar| ivar.to_s.sub(/^@/, '').to_sym}
+      
+      attributes = instance_variables.inject({}) do |r, s|
+        r.merge!({ivar_to_sym[s] => instance_variable_get(s)})
+      end.delete_if do |k,v|
+        !ANSWER_ATTRS.map {|attribute| attribute[:name]}.include?(ivar_to_sym[k])
+      end 
+      
+      attributes
     end
   
     def new?
@@ -43,10 +40,24 @@ module Answers
 
     def self.find(id)
       response = Answers.client.get(Protocol.answer_uri(id))
+      
+      if response.has_key?('status')
+        if response['status']
+          return nil
+        end
+      end
+      
       answer_hash = response['answers'].first
       answer = new(answer_hash)
-    
+          
       answer
+    end
+    
+    def self.all
+      response = Answers.client.get(Protocol.answer_uri)
+      answers = response['answers']
+      
+      answers.map {|q| new(q)}
     end
       
     def save

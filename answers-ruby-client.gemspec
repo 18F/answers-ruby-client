@@ -23,6 +23,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", "~> 3.0.0"
   spec.add_development_dependency "pry"
+  spec.add_development_dependency "dotenv"
+  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "vcr"
   
   spec.add_dependency "faraday"
   spec.add_dependency "faraday_middleware"

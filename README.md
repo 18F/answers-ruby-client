@@ -4,13 +4,17 @@ Low level Ruby access to the [Answers Platform](https://github.com/18F/answers) 
 
 ## Installation
 
-TBD
+```ruby
+gem 'answers-ruby-client'
+```
+
+```sh
+gem install answers-ruby-client
+```
 
 ## Usage
 
-### The Vision
-
-(not quite there yet)
+### Synopsis
 
 ```ruby
 require 'answers'
@@ -50,11 +54,51 @@ answer.save
 
 ```
 
-#### TODO
+### CRUD
 
-1. Test coverage
-2. Serializing JSON responses
-3. Documentation
+#### Create
+
+```ruby
+Answers::Question.new(text: 'hello').save
+Answers::Answer.new(text: 'hello').save
+```
+
+#### Read
+
+```ruby
+Answers.Question.find(1)
+Answers.Answer.find(1)
+```
+
+#### Update
+
+```ruby
+a = Answers::Question.find(1)
+a.text = 'new_text'
+a.save
+```
+
+#### Delete
+
+```ruby
+a = Answers::Question.find(1)
+a.text = 'new_text'
+a.delete
+```
+
+### Question attributes
+
+- `id` (Integer)
+- `text` (`String`) - the text of the question
+- `in_language` (`String`) - the language of the question
+- `need_to_know` (`String`)
+
+
+### Answer
+
+- `text` (`String`) - the text of the answer
+- `in_language` (`String`) - the language of the answer
+- `question_id` (`Integer`) - the 
 
 ## Contributing
 

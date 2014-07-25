@@ -13,30 +13,54 @@ module Answers
     }
     # if credentials are passed, overwrite the defaults
     defaulted.merge!(config)
-    
+        
     # instantiate a client
     @@client = Client.new(config)
   end
   
+  def self.client?
+    return false if (defined?(@@client)).nil?
+    return false if @@client.nil?
+    
+    true
+  end
+  
+  # erases the current client, if one exists
+  def self.reset!
+    return if !client?
+    #return if (defined?(@@client)).nil?
+    @@client = nil
+    return
+  end
+  
   # initialized client accessible from the Answers singleton
   def self.client
-    if @@client.nil?
-      raise "Answers Platform API not initialized"
+    if !client?
+      raise Answers::Error.new "Answers Platform API not initialized. Call Answers.init."
     end
     
     @@client
   end
   
   class Client
-    attr_accessor :credentials
+    attr_reader :connection
     
-    def initialize(config=nil)
+    def initialize(config = {})
+      # use the default
+      url = Protocol::BASE_PATH
+      
+      # or use the provided url, if one is provided
+      if config[:url]
+        url = config[:url]
+      end
+      
+      # put it in a hash
       faraday_defaults = {
-        url: Protocol::BASE_PATH
+        url: url 
       }
       
-      @conn = Faraday.new(faraday_defaults) do |faraday|
-        faraday.response :logger                  # log requests to STDOUT
+      @connection = Faraday.new(faraday_defaults) do |faraday|
+        #faraday.response :logger                  # log requests to STDOUT
         faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
         faraday.headers['Content-Type'] = Protocol::DEFAULT_CONTENT_TYPE
         faraday.headers[Protocol::EMAIL_HEADER_KEY] = config[:user_email] if config[:user_email]
@@ -44,57 +68,44 @@ module Answers
       end
     end
     
-    def get(path, params=nil)
-      response = @conn.get do |req|
-        req.url path
-        req.params = params if params
+    def request(method, path, &block)
+      response = @connection.send(method) do |req|
+        req.url(path)
+        block.call(req) if block_given?
       end
       
-      throw_response_error!(response) if response_error?(response)
-      
-      JSON.parse(response.body)
+      handle_response(response)
+    end
+    
+    def get(path, params=nil)
+      request(:get, path) do |req|
+        req.params = params if params
+      end
     end
     
     def post(path, body=nil)
-      response = @conn.post do |req|
-        req.url path
+      request(:post, path) do |req|
         req.body = body.to_json if body
       end
-      
-      throw_response_error!(response) if response_error?(response)
-      
-      JSON.parse(response.body)
     end
     
     def put(path, body=nil)
-      response = @conn.put do |req|
-        req.url path
+      request(:put, path) do |req|
         req.body = body.to_json if body
       end
-      
-      throw_response_error!(response) if response_error?(response)
-      
-      
-      JSON.parse(response.body)
     end
     
     def delete(path)
-      response = @conn.delete(path)
-      
-      throw_response_error!(response) if response_error?(response)
-      
+      request(:delete, path)
+    end
+    
+    def handle_response(response)
+      if response.status == 401
+        raise Answers::Error.new "401 Unauthorized"
+      end
       JSON.parse(response.body)
-    end
-    
-    def response_error?(response)
-      response.status == 401
-    end
-    
-    def throw_response_error!(response)
-      raise Answers::Error.new("HTTP Response error #{response.status}")
     end
   
   end
 
 end
-

@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:1337/api/v1/answers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjAyZDg3NjRiM2EyOWFjZjc4ZjM1NmQzZDRmMTFkNmM4Ig==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
+      !binary "WC1SZXF1ZXN0LUlk":
+      - !binary |-
+        OTNhMWI5OTEtZTZiYi00ZTg4LTliNTAtN2Q0YzVjNDU5NmE1
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MC4wNzk5Mzc=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        Y2xvc2U=
+      !binary "U2VydmVy":
+      - !binary |-
+        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        WSrl/cfP/wEAAP//AwBj+93LEywAAA==
+    http_version: 
+  recorded_at: Fri, 25 Jul 2014 17:40:55 GMT
+recorded_with: VCR 2.9.2

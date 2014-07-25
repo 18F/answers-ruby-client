@@ -23,7 +23,7 @@ module Answers
     end
   
     def attributes
-      ivar_to_sym = Proc.new {|ivar| to_s.sub(/^@/, '').to_sym}
+      ivar_to_sym = Proc.new {|ivar| ivar.to_s.sub(/^@/, '').to_sym}
       
       attributes = instance_variables.inject({}) do |r, s|
         r.merge!({ivar_to_sym[s] => instance_variable_get(s)})
@@ -40,6 +40,13 @@ module Answers
 
     def self.find(id)
       response = Answers.client.get(Protocol.question_uri(id))
+      
+      if response.has_key?('status')
+        if response['status']
+          return nil
+        end
+      end
+      
       question_hash = response['questions'].first
       question = new(question_hash)
           
