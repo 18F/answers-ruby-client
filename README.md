@@ -4,6 +4,8 @@
 
 [![Test Coverage](https://codeclimate.com/github/18F/answers-ruby-client/coverage.png)](https://codeclimate.com/github/18F/answers-ruby-client)
 
+[![Coverage Status](https://coveralls.io/repos/18F/answers-ruby-client/badge.png)](https://coveralls.io/r/18F/answers-ruby-client)
+
 # answers-ruby-client
 
 Low level Ruby access to the [Answers Platform](https://github.com/18F/answers) API
