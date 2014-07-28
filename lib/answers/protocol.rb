@@ -18,11 +18,21 @@ module Answers
       end
     end
     
+
     def self.answer_uri(answer_id=nil)
       if answer_id
         "#{BASE_PATH}/answers/#{answer_id}"
       else
         "#{BASE_PATH}/answers"
+      end
+    end
+    
+    def self.uri(resource, id=nil)
+      case resource
+      when :question
+        question_uri(id)
+      when :answer
+        answer_uri(id)
       end
     end
 

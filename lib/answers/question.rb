@@ -1,5 +1,5 @@
 module Answers
-  class Question
+  class Question < BaseModel
   
     QUESTION_ATTRS = [
       {name: :id, read_only: true},
@@ -33,63 +33,5 @@ module Answers
       
       attributes
     end
-  
-    def new?
-      @id.nil?
-    end
-
-    def self.find(id)
-      response = Answers.client.get(Protocol.question_uri(id))
-      
-      if response.has_key?('status')
-        if response['status']
-          return nil
-        end
-      end
-      
-      question_hash = response['questions'].first
-      question = new(question_hash)
-          
-      question
-    end
-    
-    def self.all
-      response = Answers.client.get(Protocol.question_uri)
-      questions = response['questions']
-      
-      questions.map {|q| new(q)}
-    end
-      
-    def save
-      body   = attributes.delete_if {|k,v| v.nil?} 
-      path   = new? ? Protocol.question_uri : Protocol.question_uri(@id)
-      method = new? ? :post : :put
-    
-      response = Answers.client.send(method, path, body)
-      question_hash = response['questions'].first
-
-      update_attributes!(question_hash)
-    
-      self
-    end
-  
-    def delete
-      raise "Cannot delete unsaved object." if new?
-      response = Answers.client.delete(Protocol.question_uri(@id))
-    
-      response
-    end
-  
-    private
-  
-      def update_attributes!(attributes)
-        attributes.each_pair do |key, value|
-          update_attribute!(key.to_sym, value)
-        end
-      end
-  
-      def update_attribute!(attribute_name, attribute_value)
-        instance_variable_set("@#{attribute_name}", attribute_value)
-      end
   end
 end
