@@ -14,74 +14,56 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "WC1GcmFtZS1PcHRpb25z":
-      - !binary |-
-        U0FNRU9SSUdJTg==
-      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
-      - !binary |-
-        MTsgbW9kZT1ibG9jaw==
-      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
-      - !binary |-
-        bm9zbmlmZg==
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
-      !binary "RXRhZw==":
-      - !binary |-
-        IjUyZjA4OTYwNzFhOTJiZjcyNjBjMTdiZTFkOTAyNDQyIg==
-      !binary "Q2FjaGUtQ29udHJvbA==":
-      - !binary |-
-        bWF4LWFnZT0wLCBwcml2YXRlLCBtdXN0LXJldmFsaWRhdGU=
-      !binary "U2V0LUNvb2tpZQ==":
-      - !binary |-
-        cmVxdWVzdF9tZXRob2Q9R0VUOyBwYXRoPS8=
-      !binary "WC1SZXF1ZXN0LUlk":
-      - !binary |-
-        NTc0ODM4ODEtNDVkOS00ZWQ0LTlmNGItMmVlZWQyODZhMjU3
-      !binary "WC1SdW50aW1l":
-      - !binary |-
-        MC4wMTcxMTM=
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        Y2xvc2U=
-      !binary "U2VydmVy":
-      - !binary |-
-        dGhpbiAxLjYuMiBjb2RlbmFtZSBEb2MgQnJvd24=
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"16891a972266d98b659eef6fcd1c3cc2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - request_method=GET; path=/
+      X-Request-Id:
+      - 6675bd21-f6e8-45f3-beaa-22d52761c5b4
+      X-Runtime:
+      - '0.017494'
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+      Server:
+      - thin 1.6.2 codename Doc Brown
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAKeW0lMAA2TOQQrCMBCF4bvMum0yk4Rp5hyuFJHQBCoEW5qIQundNeDO
-        7eN78O8QHuWVtgJy2eEeQbCDaUuhpngLFQRIo+0198gnZNFOiAZ2fIYOnmv8
-        d+SaM14sD0S+uZreTfDI3o3aWm2JqP23/J3nWldRKi9TyPNSqqAxrH5ZCuG4
-        Hh8AAAD//wMAsKJym6YAAAA=
+      encoding: UTF-8
+      string: '{"answers":[{"id":1,"created_at":"2014-07-17T17:05:22.757Z","updated_at":"2014-07-25T17:40:55.377Z","text":"new_text","url":"http://localhost:1337/answers/1"}]}'
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 17:40:55 GMT
+  recorded_at: Mon, 28 Jul 2014 14:43:13 GMT
 - request:
     method: put
     uri: http://localhost:1337/api/v1/answers/1
     body:
       encoding: UTF-8
-      string: ! '{"id":1,"created_at":"2014-07-17T17:05:22.757Z","updated_at":"2014-07-25T17:39:47.229Z","text":"revised"}'
+      string: '{"id":1,"created_at":"2014-07-17T17:05:22.757Z","updated_at":"2014-07-25T17:40:55.377Z","text":"revised"}'
     headers:
       Content-Type:
       - application/json
       User-Agent:
       - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
   response:
     status:
       code: 401
@@ -98,9 +80,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 42468c17-3722-46f2-b65f-057192b8f85a
+      - e986c753-e97c-488e-a883-8f66972cf68f
       X-Runtime:
-      - '0.012235'
+      - '0.012730'
       Vary:
       - Accept-Encoding
       Connection:
@@ -108,8 +90,8 @@ http_interactions:
       Server:
       - thin 1.6.2 codename Doc Brown
     body:
-      encoding: US-ASCII
-      string: ! '{"error":"You need to sign in or sign up before continuing."}'
+      encoding: UTF-8
+      string: '{"error":"You need to sign in or sign up before continuing."}'
     http_version: 
-  recorded_at: Fri, 25 Jul 2014 17:40:55 GMT
+  recorded_at: Mon, 28 Jul 2014 14:43:13 GMT
 recorded_with: VCR 2.9.2

@@ -103,7 +103,7 @@ module Answers
       if response.status == 401
         raise Answers::Error.new "401 Unauthorized"
       end
-      JSON.parse(response.body)
+        JSON.parse(response.body)
     end
   
   end

@@ -1,5 +1,6 @@
 module Answers
   class BaseModel
+    
     def new?
       @id.nil?
     end
