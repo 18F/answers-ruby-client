@@ -90,7 +90,9 @@ a.delete
 
 ### Question attributes
 
-- `id` (Integer)
+- `id` (`Integer`)
+- `created_at` (`String`)
+- `updated_at` (`String`)
 - `text` (`String`) - the text of the question
 - `in_language` (`String`) - the language of the question
 - `need_to_know` (`String`)
@@ -98,9 +100,12 @@ a.delete
 
 ### Answer
 
+- `id` (`Integer`)
+- `created_at` (`String`)
+- `updated_at` (`String`)
 - `text` (`String`) - the text of the answer
 - `in_language` (`String`) - the language of the answer
-- `question_id` (`Integer`) - the 
+- `question_id` (`Integer`) - the id of the question that the Answer belongs to
 
 ## Contributing
 
